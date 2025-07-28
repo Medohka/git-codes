@@ -1,0 +1,98 @@
+/* --- Global Styles & Body Background --- */
+/* This sets the default font for the whole page and a nice light grey background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- The Main Card Container --- */
+/* This styles the white box that holds all our content */
+.profile-card {
+    /* Sizing and Centering */
+    width: 320px;
+    margin: 40px auto; /* The 'auto' horizontally centers the card */
+    
+    /* Colors and Appearance */
+    background-color: #b2c8e8;
+    border-radius: 15px; /* Creates the rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to make it "float" */
+
+    /* Spacing and Layout */
+    padding: 30px;
+    text-align: center; /* Centers all the text inside the card */
+}
+
+/* --- The Profile Picture --- */
+/* This makes the image circular and adds a border */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* This is the magic trick to make a square image a circle */
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Prevents the image from being stretched or squished */
+}
+
+/* --- Typography --- */
+/* Styling the Name */
+.name {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1.5em; /* 1.5 times the base font size */
+    font-weight: 600;
+}
+
+/* Styling the Title */
+.title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Styling the Bio */
+.bio {
+    font-size: 0.95em;
+    line-height: 1.5; /* Adds some nice spacing between lines of text */
+}
+
+/* --- Social Links --- */
+/* This uses Flexbox to arrange the links in a neat row */
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    gap: 20px; /* Adds space between each link */
+}
+
+/* Styling the actual link text */
+.social-links a {
+    text-decoration: none; /* Removes the default underline */
+    color: #007BFF; /* A nice, strong blue */
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* An effect for when you hover over a link */
+.social-links a:hover {
+    text-decoration: underline; /* Adds the underline back on hover */
+}
+.container input[type="text"],.container input[type="password"]{
+    width:100% ;
+    padding:10px ;
+    margin:10px,0 ;
+    border-radius:5px ;
+}
+
+.container button{
+    width:20%;
+    padding: 2px;
+    color: black;
+}
+.container button:hover { background-color :#007BFF;
+    box-shadow: #007BFF;
+}
